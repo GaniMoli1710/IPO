@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluestock Fintech Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/update.css">
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+
+        <div id="sidebar" class="bg-light-gray text-gray p-3">
+            <div class="sidebar-header d-flex align-items-center mb-4">
+                <div class="logo-container">
+                    <div class="logo-circle bg-light-blue text-blue rounded-circle d-flex justify-content-center align-items-center">
+                        BF
+                    </div>
+                </div>
+                <h5 class="ms-2 mt-1 text-blue">Bluestock Fintech</h5>
+            </div>
+            <h6 class="text-gray mb-3 ms-2">MENU</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-gray d-flex align-items-center " href="index.html">
+                        <i class="bi bi-speedometer2 me-2 "></i>Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-gray d-flex align-items-center active" href="manage.html">
+                        <i class="bi bi-bar-chart-line me-2"></i>Manage IPO
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-gray d-flex align-items-center" href="#">
+                        <i class="bi bi-file-earmark-text me-2"></i>IPO Subscription
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-gray d-flex align-items-center" href="#">
+                        <i class="bi bi-check-circle me-2"></i>IPO Allotment
+                    </a>
+                </li>
+                <h6 class="text-gray mb-3 mt-3 ms-2">OTHER</h6>
+                <li class="nav-item">
+                    <a class="nav-link text-gray d-flex align-items-center" href="#">
+                        <i class="bi bi-check-circle me-2"></i>Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-gray d-flex align-items-center" href="#">
+                        <i class="bi bi-check-circle me-2"></i>API Manager
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-gray d-flex align-items-center" href="#">
+                        <i class="bi bi-check-circle me-2"></i>Accounts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-gray d-flex align-items-center" href="#">
+                        <i class="bi bi-check-circle me-2"></i>Help
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content" class="p-4">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <form class="d-flex me-auto">
+                        <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="circle-container bg-orange text-white">
+                                    V
+                                </div>
+                                Hi, Vishal
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Container -->
+            <div class="container">
+                <h3 class="mt-2">Upcoming IPO Information</h3>
+                <p class="mb-4">Manage your IPO Details</p>
+                <div class="d-flex justify-content-end mb-3">
+                    <button id="registerbutton" class="btn btn-primary">Register</button>
+                    <button class="btn btn-outline-primary ms-2">Cancel</button>
+                </div>
+                <hr class="text-gray">
+
+                <!-- Main Sections -->
+                <div class="row">
+                    <!-- Section 1 -->
+                    <div class="col-md-6">
+                        <h4>IPO Information</h4>
+                        <ul class="list-group  mb-4">
+                            <li class="list-group-item active">
+                                <i class="bi bi-info-circle"></i> IPO Information
+                            </li>
+                            <li class="list-group-item text-dark">
+                                <i class="bi bi-file-earmark-text"></i> IPO Info
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="col-md-6">
+                        <!-- Subsection 1 -->
+                        <div class="mb-4">
+                            <h4>IPO Information</h4>
+                            <p>Enter IPO details</p>
+                            <hr class="text-gray">
+                            <h5>Company Logo</h5>
+                            <input type="file" class="form-control mb-2">
+                            <button class="btn btn-primary">Upload Logo</button>
+                            <button class="btn btn-outline-primary">Delete</button>
+                        </div>
+
+                        <!-- Subsection 2 -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="companyName" class="form-label">Company Name</label>
+                                    <input type="text" class="form-control" id="companyName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="openDate" class="form-label">Open</label>
+                                    <input type="date" class="form-control" id="openDate">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="issueSize" class="form-label">Issue Size</label>
+                                    <input type="number" class="form-control" id="issueSize" placeholder="₹">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="listingDate" class="form-label">Listing Date</label>
+                                    <input type="date" class="form-control" id="listingDate">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="priceBand" class="form-label">Price Band</label>
+                                    <input type="text" class="form-control" id="priceBand">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="closeDate" class="form-label">Close</label>
+                                    <input type="date" class="form-control" id="closeDate">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="issueType" class="form-label">Issue Type</label>
+                                    <select class="form-select" id="issueType">
+                                        <option selected>Select Issue Type</option>
+                                        <option value="1">Public</option>
+                                        <option value="2">Private</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="status" class="form-label">Status</label>
+                                    <select class="form-select" id="status">
+                                        <option selected>Select Status</option>
+                                        <option value="1">Active</option>
+                                        <option value="2">Closed</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Listed IPO Details Section -->
+                <h4 class="mt-5">NEW LISTED IPO DETAILS (WHEN IPO GET LISTED)</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="ipoPrice" class="form-label">IPO Price</label>
+                            <input type="number" class="form-control" id="ipoPrice" placeholder="₹">
+                        </div>
+                        <div class="mb-3">
+                            <label for="listingGain" class="form-label">Listing Gain</label>
+                            <input type="number" class="form-control" id="listingGain" placeholder="%">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cmp" class="form-label">CMP</label>
+                            <input type="number" class="form-control" id="cmp" placeholder="₹">
+                        </div>
+                        <div class="mb-3">
+                            <label for="rhp" class="form-label">RHP</label>
+                            <input type="url" class="form-control" id="rhp" placeholder="Link to RHP">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="listingPrice" class="form-label">Listing Price</label>
+                            <input type="number" class="form-control" id="listingPrice" placeholder="₹">
+                        </div>
+                        <div class="mb-3">
+                            <label for="listingDateNew" class="form-label">Listing Date</label>
+                            <input type="date" class="form-control" id="listingDateNew">
+                        </div>
+                        <div class="mb-3">
+                            <label for="currentReturn" class="form-label">Current Return</label>
+                            <input type="number" class="form-control" id="currentReturn" placeholder="%">
+                        </div>
+                        <div class="mb-3">
+                            <label for="drhp" class="form-label">DRHP</label>
+                            <input type="url" class="form-control" id="drhp" placeholder="Link to DRHP">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/update.js"></script>
+</body>
+</html>

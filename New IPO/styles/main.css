@@ -1,0 +1,83 @@
+/* Body & Font Setup */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #f7f7f7; /* Light grey background */
+}
+
+.text-gray {
+    color: #6c757d; /* Grey text color */
+}
+
+.text-blue {
+    color: #007bff; /* Blue text color */
+}
+
+.bg-light-gray {
+    background-color: #e9ecef; /* Another shade of grey for sidebar background */
+}
+
+.bg-light-blue {
+    background-color: #007bff; /* Blue background for logo circle */
+    color:white;
+}
+
+/* Circle Styling */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.d-flex .circle:nth-child(1) {
+    transform: translate(-20px, 20px);
+}
+
+.d-flex .circle:nth-child(2) {
+    transform: translate(20px, -20px);
+}
+
+.d-flex .circle:nth-child(3) {
+    transform: translate(-10px, -10px);
+}
+
+.circle-chart {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-unstyled li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .form-inline input[type="search"] {
+    width: 300px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+img.rounded-circle {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.dropdown-menu-end {
+    right: 0;
+    left: auto;
+}

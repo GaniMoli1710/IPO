@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPO Admin Dashboard</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div id="sidebar" class="bg-light-gray text-gray p-3">
+                <div class="sidebar-header d-flex align-items-center mb-4">
+                    <div class="logo-container">
+                        <div class="logo-circle bg-light-blue text-blue rounded-circle d-flex justify-content-center align-items-center">
+                            BF
+                        </div>
+                    </div>
+                    <h5 class="ms-2 mt-1 text-blue">Bluestock Fintech</h5>
+                </div>
+                <h6 class="text-gray mb-3 ms-2">MENU</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-gray d-flex align-items-center active" href="index.html">
+                            <i class="bi bi-speedometer2 me-2 "></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray d-flex align-items-center" href="manage.html">
+                            <i class="bi bi-bar-chart-line me-2"></i>Manage IPO
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray d-flex align-items-center" href="#">
+                            <i class="bi bi-file-earmark-text me-2"></i>IPO Subscription
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray d-flex align-items-center" href="#">
+                            <i class="bi bi-check-circle me-2"></i>IPO Allotment
+                        </a>
+                    </li>
+                    <h6 class="text-gray mb-3 mt-3 ms-2">OTHER</h6>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray d-flex align-items-center" href="#">
+                            <i class="bi bi-check-circle me-2"></i>Settings
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray d-flex align-items-center" href="#">
+                            <i class="bi bi-check-circle me-2"></i>API Manager
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray d-flex align-items-center" href="#">
+                            <i class="bi bi-check-circle me-2"></i>Accounts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray d-flex align-items-center" href="#">
+                            <i class="bi bi-check-circle me-2"></i>Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Main content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <!-- Top Navbar -->
+                <nav class="navbar navbar-light bg-light justify-content-between">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://via.placeholder.com/30" alt="Profile Image" class="rounded-circle">
+                            Hi, Vishal
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
+                </div>
+
+                <div class="row">
+                    <!-- IPO Dashboard India -->
+                    <div class="col-lg-4">
+                        <h5>IPO Dashboard India</h5>
+                        <p class="text-gray">IPO in Gain</p>
+                        <div class="separator mb-3"></div>
+                        
+                        <div class="d-flex align-items-center justify-content-around flex-wrap">
+                            <div class="circle bg-info text-white p-4 text-center">
+                                <h5 class="mb-1">IPO Gain</h5>
+                                <p class="display-10">20</p>
+                            </div>
+                            <div class="circle bg-danger text-white p-4 text-center">
+                                <h5 class="mb-1">IPO Loss</h5>
+                                <p class="display-10">9</p>
+                            </div>
+                            <div class="circle bg-warning text-white p-4 text-center">
+                                <p class="display-9">30</p>
+                                <h5 class="mb-1">Total IPO</h5>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-4">
+                        <h5>Quick Links</h5>
+                        <div class="separator mb-3"></div>
+                    <p class="text-gray">Adipiscing elit, sed do eiusmod tempor </p>
+                        <ul class="list-unstyled">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>NSE India</span><button class="btn btn-white bg-light">Visit Now</button>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>BSE India</span><button class="btn btn-white bg-light">Visit Now</button>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>SEBI</span><button class="btn btn-white bg-light">Visit Now</button>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Money Control</span><button class="btn btn-white bg-light">Visit Now</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Main Board IPO -->
+                    <div class="col-lg-4">
+                        <h5>Main Board IPO</h5>
+                        <div class="separator mb-3"></div>
+                        <p class="text-gray">From 01 Jan 2024</p>
+                        <div class="circle-chart">
+                            <canvas id="ipoChart"></canvas>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-white bg-light text-center">View Report</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

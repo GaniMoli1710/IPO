@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "NSE India",
+        "link": "https://nseindia.com"
+    },
+    {
+        "id": 2,
+        "name": "BSE India",
+        "link": "https://bseindia.com"
+    },
+    {
+        "id": 3,
+        "name": "SEBI",
+        "link": "https://sebi.gov.in"
+    },
+    {
+        "id": 4,
+        "name": "Money Control",
+        "link": "https://moneycontrol.com"
+    }
+]
