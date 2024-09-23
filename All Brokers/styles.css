@@ -1,0 +1,83 @@
+/* Custom Styles */r
+  
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  
+  h1 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  
+  h1 span {
+    color: #28a745;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .container h2 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  
+  /* Custom Styles for Upstox Card */
+
+#star-rating i {
+    font-size: 1.5rem;
+  }
+  
+  ul.list-unstyled li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  button {
+    font-size: 0.9rem;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .text-success {
+    color: #28a745 !important;
+  }
+  
+  .btn-sm {
+    font-size: 0.875rem;
+  }
+  
+  img.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Tick Mark Style */
+.tick-box {
+    display: inline-block;
+    background-color: #28a745; /* Green Background */
+    color: white; /* White Tick */
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.tick-box i {
+    font-size: 1rem; /* Size of the tick */
+}
+

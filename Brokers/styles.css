@@ -1,0 +1,122 @@
+/* Sidebar styling */
+.sidebar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  .sidebar a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .sidebar i {
+    margin-right: 10px;
+  }
+  .sidebar a:hover {
+    background-color: #e9ecef;
+    border-radius: 5px;
+  }
+  
+  /* Main content card styling */
+  .broker-card {
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .broker-card img {
+    width: 100px;
+    height: auto;
+  }
+  
+ /* Rating Stars Style */
+.rating .stars {
+    color: #FFD700; /* Golden yellow for stars */
+    font-size: 1.5rem;
+  }
+  
+  .broker-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .broker-card img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .broker-card h4 {
+    margin-top: 15px;
+  }
+/* Charges Table Styles */
+.charges-heading {
+    margin-bottom: 20px;
+  }
+  
+  .charges-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  
+  .charges-table th, .charges-table td {
+    padding: 15px;
+    border: 1px solid #ddd; /* Light border for the table */
+  }
+  
+  .charges-table th {
+    background-color: #6a82fb; 
+    font-weight: bold;
+  }
+  
+  .charges-table td {
+    background-color: #fff;
+  }
+/* Brokerage Charges Table Styles */
+.brokerage-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  
+  .brokerage-table th, .brokerage-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .brokerage-table th {
+    background-color: #6a82fb;
+    font-weight: bold;
+  }
+  
+  .brokerage-table td {
+    background-color: #fff;
+  }
+  /* Styling for Pros & Cons section */
+.pros-cons-heading {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Styling for the logos in the table */
+  .broker-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  /* Table styling */
+  .table-bordered {
+    border: 2px solid #dee2e6;
+  }
+  
+  .table-bordered th,
+  .table-bordered td {
+    vertical-align: middle;
+    text-align: center;
+  }

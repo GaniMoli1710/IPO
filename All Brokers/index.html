@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bluestock</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Bluestock Logo" width="65" height="35">
+      <b>BLUESTOCK</b>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#">IPO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Brokers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Live News</a></li>
+      </ul>
+      <div class="ml-auto">
+        <button class="btn btn-outline-primary">Sign In</button>
+        <button class="btn btn-primary ml-2">Sign Up Now</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="container text-center mt-5">
+    <h1>Made to <span class="text-success">Trade</span></h1>
+  </div>
+
+  <!-- Upstox Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Upstox</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="upstox-logo.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Angel One Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Angel One</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="angelone.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- Groww Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Groww</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="groww.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- Dhan Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Dhan</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="Dhan.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- Alice Blue Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Alice Blue</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="aliceblue.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- Axis Direct Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Axis Direct</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="axisdirect.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Fyers Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Fyers</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="fyers.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- Geojit Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Geojit</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="geojit.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- HDFC Securities Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>HDFC Securities</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="hdfc.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- IIFL Securities Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>IIFL Securities</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="iifl.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- Kotak securities Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Kotak securities</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="kotak.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- Motilal Oswal Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Motilal Oswal</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="motilal.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- Nuvama Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Nuvama</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="nuvama.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- Paytm Money Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Paytm Money</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="paytm.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- SBI securities Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>SBI securities</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="sbi.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- Sharekhan Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Sharekhan</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="sharekhan.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- SMC Global Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>SMC Global</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="smc.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+  <!-- 5Paisa Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>5Paisa</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="5paisa.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+  <!-- Zerodha Card -->
+  <div class="container mt-5">
+    <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+      <!-- 1st Column - Broker Info -->
+      <div class="col-md-3">
+        <h2>Zerodha</h2>
+        <!-- Dynamic Stars -->
+        <div id="star-rating" class="mb-2"></div>
+        <p><i class="fas fa-user"></i> 15K Reviews</p>
+        <p><i class="fas fa-users"></i> 50.2K Accounts</p>
+        <h6>Open Demat A/c for FREE</h6>
+        <button class="btn btn-success btn-sm">Open A/c</button>
+        <button class="btn btn-outline-success btn-sm ml-2">Learn More</button>
+      </div>
+
+      <!-- 2nd Column - Services with checkboxes -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Equity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Commodity</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Currency</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Futures</li>
+            <li><span class="tick-box"><i class="fas fa-check"></i></span> Options</li>        
+        </ul>
+      </div>
+
+      <!-- 3rd Column - Charges -->
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><strong>A/c Opening Charge:</strong> <p>₹ Rs. 0</p>  </li>
+          <li><strong>Maintenance Charge:</strong> <p>₹300</p> </li>
+          <li><strong>Delivery Brokerage:</strong> <p>₹20</p>  </li>
+          <li><strong>Intraday Brokerage:</strong> <p>₹20</p>  </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column - Logo -->
+      <div class="col-md-3 text-center">
+        <img src="zerodha.png" alt="Upstox Logo" class="img-fluid" width="150">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
